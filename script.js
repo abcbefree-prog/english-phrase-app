@@ -298,6 +298,7 @@ idioms.forEach((item) => {
 
 const idiom = document.getElementById("idiom");
 const meaning = document.getElementById("meaning");
+const category = document.getElementById("category");
 const btnSpeak = document.getElementById("btnSpeak");
 
 const btnShow = document.getElementById("btnShow");
