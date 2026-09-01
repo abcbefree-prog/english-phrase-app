@@ -312,6 +312,8 @@ const learnedCount = document.getElementById("learnedCount");
 const correctRate = document.getElementById("correctRate");
 
 const idiomTable = document.getElementById("idiomTable");
+
+const category = document.getElementById("category");
 // =====================================
 // カード表示
 // =====================================
@@ -323,6 +325,8 @@ function showCard(index) {
     idiom.textContent = idioms[index].english;
 
     meaning.textContent = idioms[index].japanese;
+
+    category.textContent = idioms[index].category;
 
     meaning.style.display = "none";
 
