@@ -314,7 +314,7 @@ const correctRate = document.getElementById("correctRate");
 
 const idiomTable = document.getElementById("idiomTable");
 
-const category = document.getElementById("category");
+
 // =====================================
 // カード表示
 // =====================================
