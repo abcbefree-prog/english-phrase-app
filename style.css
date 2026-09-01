@@ -137,84 +137,77 @@ button:active{
     font-weight:bold;
 }
 
+<!-- カード -->
+
+<section class="card">
+
+```
+<h2 id="idiom">
+    ここに英語熟語が表示されます
+</h2>
+
+<p id="meaning">
+    日本語訳
+</p>
+
+<div class="cardButtons">
+
+    <!-- カテゴリ -->
+    <span id="category" class="category">
+        カテゴリ
+    </span>
+
 /* ---------------------
-   カード
+カテゴリ
 ----------------------*/
 
-.card{
+.category{
 
-    background:white;
+```
+display:inline-flex;
 
-    border-radius:18px;
+align-items:center;
 
-    padding:40px;
+justify-content:center;
 
-    text-align:center;
+padding:12px 18px;
 
-    box-shadow:0 6px 15px rgba(0,0,0,.12);
+border-radius:10px;
 
-    margin-bottom:30px;
+background:#e3f2fd;
 
-}
+color:#1565c0;
 
-#idiom{
+font-size:16px;
 
-    font-size:38px;
+font-weight:bold;
 
-    margin-bottom:25px;
-
-    color:#0d47a1;
-
-}
-
-#meaning{
-
-    font-size:28px;
-
-    margin-bottom:35px;
-
-    color:#e53935;
-
-    display:none;
+min-height:48px;
+```
 
 }
 
-.cardButtons{
 
-    display:flex;
+    <button id="btnShow">
+        意味を見る
+    </button>
 
-    justify-content:center;
+    <button id="btnSpeak">
+        🔊 発音
+    </button>
 
-    flex-wrap:wrap;
+    <button id="btnCorrect">
+        ○ 正解
+    </button>
 
-    gap:15px;
+    <button id="btnWrong">
+        × 不正解
+    </button>
 
-}
+</div>
+```
 
-#btnShow{
-
-    background:#3949ab;
-
-    color:white;
-
-}
-
-#btnCorrect{
-
-    background:#2e7d32;
-
-    color:white;
-
-}
-
-#btnWrong{
-
-    background:#c62828;
-
-    color:white;
-
-}
-
+</section>
 /* ---------------------
    クイズ
 ----------------------*/
