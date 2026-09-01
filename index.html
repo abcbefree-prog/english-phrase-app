@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>英語熟語学習アプリ</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+```
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 <body>
 
@@ -16,141 +20,152 @@
 
 <main>
 
-    <!-- 上部メニュー -->
-    <section class="menu">
+```
+<!-- 上部メニュー -->
+<section class="menu">
 
-        <button id="btnRandom">
-            ランダム出題
+    <button id="btnRandom">
+        ランダム出題
+    </button>
+
+    <button id="btnQuiz">
+        クイズ開始
+    </button>
+
+    <button id="btnReview">
+        苦手だけ
+    </button>
+
+    <button id="btnReset">
+        学習履歴リセット
+    </button>
+
+</section>
+
+<!-- 検索 -->
+<section class="searchArea">
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="英語・日本語で検索">
+
+</section>
+
+<!-- 学習状況 -->
+<section class="status">
+
+    <div class="statusBox">
+        総問題数
+        <span id="totalCount">0</span>
+    </div>
+
+    <div class="statusBox">
+        学習済み
+        <span id="learnedCount">0</span>
+    </div>
+
+    <div class="statusBox">
+        正答率
+        <span id="correctRate">0%</span>
+    </div>
+
+</section>
+
+<!-- カード -->
+<section class="card">
+
+    <h2 id="idiom">
+        ここに英語熟語が表示されます
+    </h2>
+
+    <p id="meaning">
+        日本語訳
+    </p>
+
+    <div class="cardButtons">
+
+        <!-- カテゴリ -->
+        <span id="category" class="category">
+            カテゴリ
+        </span>
+
+        <button id="btnShow">
+            意味を見る
         </button>
 
-        <button id="btnQuiz">
-            クイズ開始
+        <button id="btnSpeak">
+            🔊 発音
         </button>
 
-        <button id="btnReview">
-            苦手だけ
+        <button id="btnCorrect">
+            ○ 正解
         </button>
 
-        <button id="btnReset">
-            学習履歴リセット
+        <button id="btnWrong">
+            × 不正解
         </button>
 
-    </section>
+    </div>
 
-    <!-- 検索 -->
-    <section class="searchArea">
+</section>
 
-        <input
-            type="text"
-            id="searchBox"
-            placeholder="英語・日本語で検索">
+<!-- クイズ -->
+<section class="quizArea">
 
-    </section>
+    <h3>クイズ</h3>
 
-    <!-- 学習状況 -->
-    <section class="status">
+    <p id="quizQuestion">
+        問題が表示されます
+    </p>
 
-        <div class="statusBox">
-            総問題数
-            <span id="totalCount">0</span>
-        </div>
+    <div id="quizChoices">
 
-        <div class="statusBox">
-            学習済み
-            <span id="learnedCount">0</span>
-        </div>
+    </div>
 
-        <div class="statusBox">
-            正答率
-            <span id="correctRate">0%</span>
-        </div>
+</section>
 
-    </section>
+<!-- 一覧 -->
+<section class="listArea">
 
-    <!-- カード -->
-    <section class="card">
+    <h3>熟語一覧</h3>
 
-        <h2 id="idiom">
-            ここに英語熟語が表示されます
-        </h2>
+    <table>
 
-        <p id="meaning">
-            日本語訳
-        </p>
+        <thead>
 
-        <div class="cardButtons">
+        <tr>
+            <th>No</th>
+            <th>英語熟語</th>
+            <th>意味</th>
+            <th>正答率</th>
+        </tr>
 
-            <button id="btnShow">
-                意味を見る
-            </button>
-	　　<button id="btnSpeak">
-   	 🔊 発音
-	　　</button>
+        </thead>
 
-            <button id="btnCorrect">
-                ○ 正解
-            </button>
+        <tbody id="idiomTable">
 
-            <button id="btnWrong">
-                × 不正解
-            </button>
+        </tbody>
 
-        </div>
+    </table>
 
-    </section>
-
-    <!-- クイズ -->
-    <section class="quizArea">
-
-        <h3>クイズ</h3>
-
-        <p id="quizQuestion">
-            問題が表示されます
-        </p>
-
-        <div id="quizChoices">
-
-        </div>
-
-    </section>
-
-    <!-- 一覧 -->
-    <section class="listArea">
-
-        <h3>熟語一覧</h3>
-
-        <table>
-
-            <thead>
-
-            <tr>
-                <th>No</th>
-                <th>英語熟語</th>
-                <th>意味</th>
-                <th>正答率</th>
-            </tr>
-
-            </thead>
-
-            <tbody id="idiomTable">
-
-            </tbody>
-
-        </table>
-
-    </section>
+</section>
+```
 
 </main>
 
 <footer>
 
-    <p>
-        English Idiom Study App
-    </p>
+```
+<p>
+    English Idiom Study App
+</p>
+```
 
 </footer>
 
 <!-- JavaScript -->
+
 <script src="script.js"></script>
 
 </body>
